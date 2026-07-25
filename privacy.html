@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Thalify</title>
+<meta name="description" content="Thalify stores your food diary on your own phone. No accounts, no tracking, no data sold.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&family=Public+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{--leaf-deep:#16301F;--leaf-mid:#1E4029;--leaf-line:#2C5238;--steel:#C3CBC4;--steel-dim:#8C9A8F;--cream:#F3F0E6;--turmeric:#E9A03B;--sprout:#9BBF6A;
+  --display:"Fraunces",Georgia,serif;--body:"Public Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--leaf-deep);color:var(--cream);font-family:var(--body);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px}
+  nav{border-bottom:1px solid var(--leaf-line)}
+  .navin{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:720px;margin:0 auto;padding:0 24px}
+  .brand{font-family:var(--display);font-size:23px;text-decoration:none;color:var(--cream)}
+  .brand span{color:var(--turmeric)}
+  .navin a.back{color:var(--steel);text-decoration:none;font-size:14.5px}
+  .navin a.back:hover{color:var(--cream)}
+  main{padding:56px 0 80px}
+  h1{font-family:var(--display);font-weight:400;font-size:clamp(31px,4.4vw,42px);line-height:1.1;letter-spacing:-.015em;margin-bottom:10px}
+  .updated{font-family:var(--mono);font-size:12.5px;color:var(--steel-dim);margin-bottom:38px}
+  h2{font-family:var(--display);font-weight:400;font-size:23px;color:var(--turmeric);margin:36px 0 12px}
+  p,li{color:var(--steel);margin-bottom:14px}
+  ul{padding-left:22px}
+  li{margin-bottom:8px}
+  b,strong{color:var(--cream);font-weight:600}
+  a{color:var(--sprout)}
+  .box{background:var(--leaf-mid);border:1px solid var(--leaf-line);border-radius:14px;padding:24px;margin:26px 0}
+  .box p:last-child{margin-bottom:0}
+  footer{border-top:1px solid var(--leaf-line);padding:32px 0;color:var(--steel-dim);font-size:14px}
+  footer a{color:var(--steel);text-decoration:none;margin-left:20px}
+</style>
+</head>
+<body>
+<nav><div class="navin"><a class="brand" href="index.html">Thali<span>fy</span></a><a class="back" href="index.html">&larr; Back to Thalify</a></div></nav>
+<main><div class="wrap">
+
+<h1>Privacy policy</h1>
+<div class="updated">Last updated: July 2026</div>
+
+<p>Thalify is a personal calorie and nutrition tracker. This policy explains what happens to your information. The short version: <b>your data stays on your device.</b></p>
+
+<h2>What we store, and where</h2>
+<p>Everything you enter &mdash; food logs, weight entries, health readings, and your profile (name, age, height, weight, diet and cuisine preferences, any health considerations you choose to add) &mdash; is stored only in your phone's local storage. There is no Thalify account, no Thalify server, and no central database. We cannot see, access, or recover your data. If you use "Backup my data", the file is saved to your own device and stays under your control.</p>
+
+<h2>The AI features</h2>
+<p>Thalify has optional AI features: logging a meal by describing it, building your plan, the weekly check-in, and daily meal ideas. When you use one, only what that request needs is sent over an encrypted connection to a processing service (Cloudflare Workers), which relays it to Anthropic's Claude API to generate the answer.</p>
+<ul>
+<li><b>Meal logging</b> sends the sentence you typed or spoke.</li>
+<li><b>Your plan and weekly check-in</b> send the numbers needed to calculate it &mdash; age, height, weight, activity, goal, diet, cuisine preferences, and any health considerations you selected &mdash; along with progress figures such as your weight trend and how consistently you logged.</li>
+<li><b>Blood sugar, HbA1c and blood pressure readings are never sent anywhere.</b> They stay on your phone.</li>
+</ul>
+<p>This information is used only to answer that request. It is not stored on any server by Thalify, not linked to your identity, and never used for advertising or profiling. Anthropic's handling of API inputs is described in <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a>.</p>
+
+<h2>What we do not do</h2>
+<ul>
+<li>No accounts, sign-ins, or passwords</li>
+<li>No analytics, tracking pixels, or advertising SDKs</li>
+<li>No selling, sharing, or monetising of any data</li>
+<li>No access to your contacts, photos, location, or other phone data</li>
+</ul>
+<p>The barcode scanner uses your camera only while the scanner is open, and only to read a barcode. No image is stored or transmitted; the barcode number is sent to the open <a href="https://world.openfoodfacts.org">Open Food Facts</a> database to look up the product.</p>
+
+<h2>Deleting your data</h2>
+<p>Because your data lives only on your device, deleting it is entirely in your hands: clear the app's storage in your phone settings, or uninstall the app. That removes everything permanently &mdash; there is no server-side copy to request deletion of.</p>
+
+<h2>Children</h2>
+<p>Thalify is intended for adults managing their own nutrition and is not directed at children under 13.</p>
+
+<h2>Health disclaimer</h2>
+<div class="box">
+<p>Thalify provides calorie estimates, food suggestions and general nutrition information for personal tracking. <b>It is not medical advice and it is not a medical device.</b> It never provides guidance on medication, insulin, dosing, or clinical targets. If you live with a health condition, your doctor or dietitian sets your medical plan &mdash; please follow their advice over anything you read in this app.</p>
+</div>
+
+<h2>Changes and contact</h2>
+<p>If this policy changes, the updated version will be posted on this page. Questions: <a href="mailto:thalifit.admin@gmail.com">thalifit.admin@gmail.com</a>.</p>
+
+</div></main>
+<footer><div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+<div>&copy; 2026 Thalify</div>
+<div><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="mailto:thalifit.admin@gmail.com">Contact</a></div>
+</div></footer>
+</body>
+</html>
