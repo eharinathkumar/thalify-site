@@ -1,33 +1,26 @@
 # Thalify website
 
-Static marketing site for Thalify. No build step — plain HTML/CSS/JS.
+Static site, no build step. Branded to the app icon (amber→green progress gauge on dark green).
 
 ## Files
-- `index.html` — landing page (interactive thali hero)
-- `privacy.html` — privacy policy (required by Google Play / Apple)
-- `support.html` — support page (required if you ship on iOS)
-- `CNAME` — custom domain for GitHub Pages
+index.html · privacy.html · support.html · CNAME
+icon-192.png · icon-512.png · favicon-32.png · apple-touch-icon.png  (all referenced — keep them)
 
-## Deploy
-1. Create a repo (e.g. `thalify-site`), upload these files.
-2. Settings → Pages → Deploy from branch `main`, folder `/ (root)`.
-3. Settings → Pages → Custom domain → `thalify.app` → Save. Tick **Enforce HTTPS**.
-4. At your registrar, add DNS records:
-   - A records for the apex (`thalify.app`) → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
-   - CNAME `www` → `eharinathkumar.github.io`
+## Signature
+The hero is a semicircular gauge that sweeps amber→green (matching the icon) as the AI
+parses a meal and the calorie readout climbs. Section dividers echo the same arc. The icon
+is the nav mark, footer mark, favicon, and og:image.
 
-## Before going live — swap in real assets
-- **Play Store link**: in `index.html`, set `href` on the two "Get it on Android" buttons and `#playLink`.
-  Official Google Play badge assets: https://play.google.com/intl/en_us/badges/
-  (Use Google's badge image rather than a text button once you have the store URL.)
-- **Demo video**: replace the `.vplaceholder` block inside `.videobox` with either
-  `<video src="demo.mp4" poster="demo-poster.jpg" autoplay muted loop playsinline></video>`
-  or a YouTube `<iframe>`. Keep local files under ~5 MB.
-- **Screenshots**: replace the three `.ph` placeholder divs with
-  `<img src="screenshot-today.png" alt="Today tab showing calorie and protein rings">` etc.
-- **Contact email**: currently `thalifit.admin@gmail.com` in the footer, privacy and support pages.
+## Deploy (GitHub Pages)
+Upload ALL files (including the 4 PNGs) to repo root. Settings → Pages → deploy from main /(root).
+Cloudflare DNS: four A records @ → 185.199.108–111.153, CNAME www → eharinathkumar.github.io, all DNS-only (grey).
+Settings → Pages → Custom domain thalify.app → Enforce HTTPS.
 
-## Notes
-- The thali hero pulls its dishes from the `DISHES` array at the bottom of `index.html` — edit freely.
-- Fonts load from Google Fonts. To go fully self-hosted later, download Fraunces / Public Sans / IBM Plex Mono into `/fonts`.
-- Colours are CSS variables in `:root`, matching the app's palette.
+## Swap before launch
+- Play Store URL: two "Get it on Android" links + #playLink.
+- Demo video: replace the .vplace block in .videobox.
+- Screenshots: replace the three .ph divs with <img> tags.
+
+## Palette (from icon)
+ink #191F13 · cream #F1EDE2 · green #4C9A45 · amber #F5A623
+Space Grotesk (display) / Inter (body) / IBM Plex Mono (data)
